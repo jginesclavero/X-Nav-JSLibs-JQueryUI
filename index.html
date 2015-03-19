@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>Desktop</title>
+	<link href="jquery-ui.css" rel="stylesheet">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+	<style>
+	body{
+		font: 62.5% "Trebuchet MS", sans-serif;
+		margin: 50px;
+	}
+	#icons-list{
+		text-align: center;
+	}
+	</style>
+</head>
+<body background="wallpaper.jpg">
+<div id="icons-list">
+	<img id="firefox" src="firefox.png" ></img>
+	<img id="chrome" src="chrome.png" ></img>
+	<img id="terminal" src="terminal.png" ></img>
+	<img id="eclipse" src="eclipse.png" ></img>
+	<img id="sublime" src="sublime.png" ></img>
+	<img id="arduino" src="arduino.png" ></img>
+	<img id="android-studio" src="android-studio.png" ></img>
+	<input type="text" name="date" id="date">
+
+</div>
+
+
+
+<script src="external/jquery/jquery.js"></script>
+<script src="jquery-ui.js"></script>
+<script>
+
+
+$( "#date" ).datepicker();
+$( "#firefox" ).draggable();
+$( "#android-studio" ).draggable();
+$( "#chrome" ).draggable();
+$( "#terminal" ).draggable();
+$( "#eclipse" ).draggable();
+$( "#sublime" ).draggable();
+$( "#arduino" ).draggable();
+
+
+
+</script>
+</body>
+</html>
